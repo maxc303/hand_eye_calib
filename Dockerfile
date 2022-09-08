@@ -10,7 +10,6 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
     python3-colcon-mixin \
     python3-rosdep \
     python3-vcstool \
-    clang-format \
     && rm -rf /var/lib/apt/lists/*
 
 # bootstrap rosdep
@@ -29,3 +28,7 @@ RUN colcon mixin add default \
 RUN apt-get update && apt-get install -y --no-install-recommends \
     ros-galactic-ros-base=0.9.3-2* \
     && rm -rf /var/lib/apt/lists/*
+# install other tools
+RUN apt-get update && apt-get install --no-install-recommends -y \
+  clang-format \
+  libeigen3-dev

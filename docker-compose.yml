@@ -6,5 +6,5 @@ services:
     working_dir: /
     tty: true
     volumes:
-      - ./hand_eye_calib:/hand_eye_calib
+      - ../hand_eye_calib:/hand_eye_calib
     
