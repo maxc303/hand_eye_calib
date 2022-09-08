@@ -10,3 +10,5 @@ find_package (Eigen3 REQUIRED)
 add_executable(main src/main.cpp)
 
 target_link_libraries (main Eigen3::Eigen)
+
+find_package(Catch2 REQUIRED)

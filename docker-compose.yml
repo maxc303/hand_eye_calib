@@ -2,7 +2,7 @@ version: "3.9"
 services:
   calib_project:
     build: .
-    container_name: calib_project
+    container_name: calib_env
     working_dir: /
     tty: true
     volumes:
