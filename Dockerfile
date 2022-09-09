@@ -32,6 +32,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 # install other tools
 RUN apt-get update && apt-get install --no-install-recommends -y \
   clang-format \
+  clang-tidy \
   libeigen3-dev
 
 RUN git clone https://github.com/catchorg/Catch2.git && \
